@@ -1,0 +1,11 @@
+@layer base {
+    html {
+        font-family: var(--font-sans);
+        background-color: var(--color-gray-50);
+        color: var(--color-black);
+    }
+
+    body {
+        line-height: 1.6;
+    }
+}

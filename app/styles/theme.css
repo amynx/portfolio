@@ -1,0 +1,70 @@
+@theme {
+    /* 🎨 Backgrounds */
+    --color-bg-primary: var(--color-white);
+    --color-bg-muted: var(--color-gray-50);
+    --color-bg-inverse: var(--color-black);
+
+    /* 🅰 Text */
+    --color-text-primary: var(--color-black);
+    --color-text-secondary: var(--color-gray-150);
+    --color-text-inverse: var(--color-white);
+
+    /* 🔵 Brand */
+    --color-brand: var(--color-blue-500);
+    --color-brand-soft: var(--color-blue-50);
+    --color-brand-strong: var(--color-blue-800);
+
+    /* 📏 Spacing semantic */
+    --space-xs: var(--space-1);
+    --space-sm: var(--space-2);
+    --space-md: var(--space-4);
+    --space-lg: var(--space-6);
+    --space-xl: var(--space-8);
+    --space-2xl: var(--space-10);
+
+    /* 🔲 Radius semantic */
+    --radius-none: var(--radius-0);
+    --radius-sm: var(--radius-1);
+    --radius-md: var(--radius-2);
+    --radius-lg: var(--radius-3);
+
+    /* 📏 Border */
+    --border-default: var(--border-1);
+
+    /* 🌫 Elevation */
+    --shadow-sm: var(--shadow-sm);
+    --shadow-md: var(--shadow-md);
+    --shadow-lg: var(--shadow-lg);
+
+
+    /* 🅰 Font families */
+    --font-body: var(--font-sans);
+    --font-code: var(--font-mono);
+
+    /* 🔠 Body text */
+    --text-body-xs: var(--font-size-xs);
+    --text-body-sm: var(--font-size-sm);
+    --text-body-md: var(--font-size-md);
+    --text-body-lg: var(--font-size-lg);
+
+    /* 🏷 Headings / Titles */
+    --text-title-sm: var(--font-size-xl);
+    --text-title-md: var(--font-size-2xl);
+    --text-title-lg: var(--font-size-3xl);
+    --text-title-xl: var(--font-size-4xl);
+    --text-title-2xl: var(--font-size-5xl);
+
+    /* 🧾 UI / Meta */
+    --text-caption: var(--font-size-xs);
+    --text-overline: var(--font-size-xs);
+
+
+
+    --leading-tight: var(--leading-tight);
+    --leading-snug: var(--leading-snug);
+    --leading-normal: var(--leading-normal);
+
+    --font-regular: var(--font-regular);
+    --font-medium: var(--font-medium);
+    --font-semibold: var(--font-semibold);
+}
