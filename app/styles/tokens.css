@@ -1,0 +1,113 @@
+:root {
+    /* 🎨 Raw colors */
+
+    /* Neutrals */
+    --color-black: #0a0a0a;
+    --color-gray-150: #e2e2e2;
+    --color-gray-50: #f5f5f5;
+    --color-white: #ffffff;
+
+    /* Brand */
+    --color-blue-50: #e8eefa;
+    --color-blue-500: #1754cf;
+    --color-blue-800: #092253;
+    --color-blue-900: #051129;
+
+    /* 📏 Spacing scale (4px base) */
+    --space-1: 0.25rem;
+    /* 4px  */
+    --space-2: 0.5rem;
+    /* 8px  */
+    --space-3: 0.75rem;
+    /* 12px */
+    --space-4: 1rem;
+    /* 16px */
+    --space-5: 1.5rem;
+    /* 24px */
+    --space-6: 2rem;
+    /* 32px */
+    --space-7: 3rem;
+    /* 48px */
+    --space-8: 4rem;
+    /* 64px */
+    --space-9: 6rem;
+    /* 96px */
+    --space-10: 8rem;
+    /* 128px */
+
+    /* 🔲 Radius */
+    --radius-0: 0;
+    --radius-1: 0.375rem;
+    /* 6px  */
+    --radius-2: 0.75rem;
+    /* 12px */
+    --radius-3: 1.25rem;
+    /* 20px */
+
+    /* 📏 Border width */
+    --border-1: 1px;
+
+    /* 🌫 Elevation */
+    --shadow-none: none;
+
+    --shadow-sm:
+        0 1px 2px rgb(0 0 0 / 0.04),
+        0 1px 1px rgb(0 0 0 / 0.03);
+
+    --shadow-md:
+        0 8px 24px rgb(0 0 0 / 0.08),
+        0 2px 6px rgb(0 0 0 / 0.04);
+
+    --shadow-lg:
+        0 24px 48px rgb(0 0 0 / 0.12),
+        0 8px 16px rgb(0 0 0 / 0.06);
+
+    /* 🅰 Typography base */
+    --font-sans: "Inter", system-ui, sans-serif;
+    --font-mono: "JetBrains Mono", monospace;
+
+    --font-size-base: 1rem;
+    --line-height-base: 1.6;
+
+
+    /* 🔠 Font sizes – responsive */
+
+    /* Fine print */
+    --font-size-xs: clamp(0.75rem, 0.72rem + 0.1vw, 0.8rem);
+
+    /* Small UI text */
+    --font-size-sm: clamp(0.875rem, 0.84rem + 0.15vw, 0.95rem);
+
+    /* Base body text */
+    --font-size-md: clamp(1rem, 0.96rem + 0.2vw, 1.1rem);
+
+    /* Large body / emphasized */
+    --font-size-lg: clamp(1.125rem, 1.05rem + 0.25vw, 1.25rem);
+
+    /* Small heading */
+    --font-size-xl: clamp(1.25rem, 1.15rem + 0.5vw, 1.5rem);
+
+    /* Medium heading */
+    --font-size-2xl: clamp(1.5rem, 1.35rem + 0.8vw, 1.875rem);
+
+    /* Large heading */
+    --font-size-3xl: clamp(1.875rem, 1.6rem + 1.2vw, 2.5rem);
+
+    /* Display */
+    --font-size-4xl: clamp(2.25rem, 1.9rem + 1.8vw, 3rem);
+
+    /* Hero / marketing */
+    --font-size-5xl: clamp(3rem, 2.4rem + 2.5vw, 4rem);
+
+
+
+    /* 📏 Line heights */
+    --leading-tight: 1.2;
+    --leading-snug: 1.35;
+    --leading-normal: 1.6;
+
+    /* 📏 Font weights */
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semibold: 600;
+}

@@ -1,7 +1,15 @@
-export default function Home() {
+import AppContainer from "@/components/layout/AppContainer"
+
+
+export default function Page() {
   return (
-    <main className="min-h-screen flex items-center justify-center">
-      <h1 className="text-4xl font-semibold">Portfolio en construcción</h1>
-    </main>
-  );
+    <div>
+      <AppContainer>
+        <div className="h-full flex items-center justify-center">
+          <h1 className="text-title-2xl font-semibold">Building Portfolio</h1>
+        </div>
+      </AppContainer>
+    </div>
+
+  )
 }
