@@ -10,14 +10,15 @@ export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <header className="relative">
-            <div className="flex items-center justify-between py-[var(--space-6)] bg-[var(--color-gray-50)]">
+        <header className=" fixed top-0 left-1/2 -translate-x-1/2 w-full max-w-[1600px] px-8 bg-gray-50 z-50">
+
+            <div className="flex items-center justify-between py-8">
                 {/* Logo */}
                 <Image src="/ay-logo.svg" alt="Logo" width={60} height={50} />
 
                 {/* Desktop navigation */}
                 <nav className="hidden lg:block">
-                    <ul className="flex items-center gap-[var(--space-6)]">
+                    <ul className="flex items-center gap-8">
                         {NAV_ITEMS.map((item) => (
                             <li
                                 key={item}
@@ -46,7 +47,7 @@ export default function Navbar() {
 
             {/* Mobile menu */}
             {isOpen && (
-                <nav className="absolute left-0 top-full w-full bg-white shadow-md lg:hidden">
+                <nav className="absolute top-full left-1/2 -translate-x-1/2 z-50 w-[calc(100%-2rem)] max-w-[1600px] rounded-xl bg-white shadow-md lg:hidden">
                     <ul className="flex flex-col gap-[var(--space-4)] p-[var(--space-6)]">
                         {NAV_ITEMS.map((item) => (
                             <li
