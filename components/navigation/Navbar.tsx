@@ -10,7 +10,7 @@ export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <header className=" fixed top-0 left-1/2 -translate-x-1/2 w-full max-w-[1600px] px-8 z-50">
+        <header className=" fixed top-0 left-1/2 -translate-x-1/2 w-full max-w-[1600px] px-8 bg-gray-50 z-50">
 
             <div className="flex items-center justify-between py-8">
                 {/* Logo */}

@@ -11,7 +11,7 @@ export default function AppContainer({ children }: AppContainerProps) {
       justify-center
     ">
             <div className="
-            relative
+            
         w-full
         max-w-[1600px]
         grid
@@ -19,7 +19,7 @@ export default function AppContainer({ children }: AppContainerProps) {
         px-4
         sm:px-6
         lg:px-8
-        z-0
+        
       ">
                 {children}
             </div>
