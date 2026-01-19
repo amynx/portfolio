@@ -1,0 +1,98 @@
+'use client';
+
+import SectionInner from "../layout/SectionInner";
+import SectionWrapper from "../layout/SectionWrapper";
+import Image from "next/image";
+import Button from "../ui/Button";
+import { ArrowRightIcon } from "@phosphor-icons/react";
+
+export default function Profile() {
+    return (
+        <SectionWrapper>
+            <SectionInner>
+                <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[700px] ">
+
+                    {/* Imagen / Visual */}
+                    <div
+                        className="
+        relative
+        order-1
+        flex items-end justify-center
+        bg-blue-50
+        overflow-hidden
+        min-h-[420px]
+        lg:min-h-[600px]
+    "
+                    >
+                        {/* Logo de fondo – siempre centrado */}
+                        <Image
+                            src="/ay-logo.svg"
+                            alt="AY Logo"
+                            width={520}
+                            height={520}
+                            className="
+            absolute
+            inset-1/2
+            -translate-x-1/2 -translate-y-1/2
+            opacity-[0.03]
+            pointer-events-none
+        "
+                        />
+
+                        {/* Foto principal – siempre pegada abajo */}
+                        <Image
+                            src="/assets/images/andres-yepez-photo.svg"
+                            alt="Profile"
+                            width={420}
+                            height={420}
+                            className="
+            relative
+            z-10
+            w-[260px]
+            sm:w-[320px]
+            lg:w-[420px]
+            self-end
+        "
+                        />
+                    </div>
+
+
+                    {/* Contenido */}
+                    <div className="
+                        order-2
+                        flex flex-col justify-center items-start
+                        p-12
+                        gap-10
+                        
+                        
+                    ">
+                        <h1 className="text-3xl lg:text-4xl font-semibold">
+                            Profile
+                        </h1>
+
+                        <p className="text-base leading-relaxed text-gray-700 max-w-xl">
+                            Soy diseñador y desarrollador digital enfocado en crear experiencias digitales claras,
+                            funcionales y bien estructuradas. Mi trabajo parte del entendimiento del problema,
+                            la definición de sistemas y la ejecución consciente, buscando siempre soluciones
+                            honestas y sostenibles. Colaboro con equipos y empresas que valoran el criterio,
+                            la claridad y los procesos bien pensados.
+                        </p>
+
+                        <Button
+                            text="Contact me"
+                            bgColor="bg-[var(--color-black)]"
+                            textColor="text-[var(--color-white)]"
+                            borderColor="border-[var(--color-blue-500)]"
+                            borderRadius="rounded-lg"
+                            icon={<ArrowRightIcon size={20} />}
+                            iconPosition="right"
+                            onClick={() => { }}
+                            disabled={false}
+                        />
+                    </div>
+
+                </div>
+            </SectionInner>
+        </SectionWrapper>
+    );
+}

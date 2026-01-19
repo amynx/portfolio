@@ -2,7 +2,7 @@
 
 import SectionWrapper from "@/components/layout/SectionWrapper";
 import SectionInner from "@/components/layout/SectionInner";
-import Card from "@/components/ui/Card";
+import Card from "@/components/sections/work/Card";
 import { PersonIcon } from "@phosphor-icons/react";
 import Image from "next/image";
 
