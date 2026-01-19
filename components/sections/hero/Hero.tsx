@@ -2,7 +2,8 @@
 import SectionWrapper from "@/components/layout/SectionWrapper";
 import SectionInner from "@/components/layout/SectionInner";
 import Image from "next/image";
-import Badge from "@/components/ui/badge";
+import Button from "@/components/ui/Button";
+import Badge from "@/components/ui/Badge";
 import {
     CodeIcon,
     ChecksIcon,
@@ -13,7 +14,6 @@ import {
     ArrowRightIcon,
 
 } from "@phosphor-icons/react";
-import Button from "@/components/ui/Button";
 
 export default function Hero() {
     return (
