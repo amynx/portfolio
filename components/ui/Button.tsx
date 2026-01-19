@@ -38,6 +38,7 @@ export default function Button({
         transition-all duration-200
         hover:opacity-90
         disabled:opacity-50 disabled:cursor-not-allowed
+        cursor-pointer
       `}
         >
             {icon && iconPosition === "left" && <span>{icon}</span>}
