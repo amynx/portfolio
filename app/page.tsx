@@ -1,7 +1,7 @@
 import AppContainer from "@/components/layout/AppContainer"
 import Navbar from "@/components/navigation/Navbar"
 import Hero from "@/components/sections/hero/Hero"
-import Work from "@/components/sections/Work"
+import Work from "@/components/sections/work/Work"
 
 export default function Page() {
   return (
@@ -12,6 +12,5 @@ export default function Page() {
         <Work />
       </AppContainer>
     </div>
-
   )
 }
