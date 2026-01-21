@@ -14,6 +14,9 @@ export default function SectionInner({
         w-full
         max-w-[1600px]
         h-full
+        px-4
+        sm:px-6
+        lg:px-8
         ${className}
       `}
         >

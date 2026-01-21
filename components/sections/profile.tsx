@@ -22,6 +22,7 @@ export default function Profile() {
         overflow-hidden
         min-h-[420px]
         lg:min-h-[600px]
+        select-none
     "
                     >
                         {/* Logo de fondo – siempre centrado */}
@@ -36,6 +37,7 @@ export default function Profile() {
             -translate-x-1/2 -translate-y-1/2
             opacity-[0.03]
             pointer-events-none
+            select-none
         "
                         />
 
@@ -52,6 +54,7 @@ export default function Profile() {
             sm:w-[320px]
             lg:w-[420px]
             self-end
+            select-none
         "
                         />
                     </div>
