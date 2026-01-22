@@ -5,6 +5,7 @@ import Work from "@/components/sections/work/Work"
 import Profile from "@/components/sections/profile"
 import Services from "@/components/sections/services/Services"
 import Contact from "@/components/sections/contact/Contact"
+import Footer from "@/components/navigation/Footer"
 
 export default function Page() {
   return (
@@ -16,6 +17,7 @@ export default function Page() {
         <Profile />
         <Services />
         <Contact />
+        <Footer />
       </AppContainer>
     </div>
   )

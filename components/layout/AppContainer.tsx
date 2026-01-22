@@ -13,7 +13,6 @@ export default function AppContainer({ children }: AppContainerProps) {
             <div className="
             
         w-full
-        max-w-[1600px]
         grid
         grid-rows-[auto_auto]
       ">

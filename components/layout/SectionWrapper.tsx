@@ -10,7 +10,9 @@ export default function SectionWrapper({
     return (
         <section className={`
       w-full
-      py-20
+      py-12
+      md:py-16
+      lg:py-24
       ${className}
     `}>
             {children}
