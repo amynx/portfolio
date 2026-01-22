@@ -5,9 +5,9 @@ import SectionWrapper from "../../layout/SectionWrapper";
 import Form from "./Form";
 import ContactCard from "./ContactCard";
 
-export default function Contact() {
+export default function Contact({ id }: { id?: string }) {
     return (
-        <SectionWrapper>
+        <SectionWrapper id={id}>
             <SectionInner className="flex flex-col gap-8 justify-center items-center">
                 <h2 className="text-4xl font-semibold mb-8">
                     Contact

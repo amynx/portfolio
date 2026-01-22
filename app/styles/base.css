@@ -3,6 +3,8 @@
         font-family: var(--font-sans);
         background-color: var(--color-gray-50);
         color: var(--color-black);
+        scroll-behavior: smooth;
+        scroll-padding-top: 120px;
     }
 
     body {

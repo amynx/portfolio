@@ -6,9 +6,9 @@ import Image from "next/image";
 import Button from "../ui/Button";
 import { ArrowRightIcon } from "@phosphor-icons/react";
 
-export default function Profile() {
+export default function Profile({ id }: { id?: string }) {
     return (
-        <SectionWrapper>
+        <SectionWrapper id={id}>
             <SectionInner>
                 <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[700px]">
 
@@ -80,7 +80,7 @@ export default function Profile() {
                         </p>
 
                         <Button
-                            text="Contact me"
+                            text="learn more"
                             bgColor="bg-[var(--color-black)]"
                             textColor="text-[var(--color-white)]"
                             borderColor="border-[var(--color-blue-500)]"
