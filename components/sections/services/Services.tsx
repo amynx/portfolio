@@ -43,9 +43,9 @@ const services = [
     },
 ];
 
-export default function Services() {
+export default function Services({ id }: { id?: string }) {
     return (
-        <SectionWrapper className="relative overflow-hidden">
+        <SectionWrapper id={id} className="relative overflow-hidden">
             <Image
                 src="/assets/images/ay-logo-stroke.svg"
                 alt="AY Logo background"

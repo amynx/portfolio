@@ -2,10 +2,11 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { EqualsIcon, XIcon } from "@phosphor-icons/react";
 import SectionInner from "../layout/SectionInner";
 
-const NAV_ITEMS = ["Work", "Profile", "Services", "Insights", "Contact"];
+const NAV_ITEMS = ["Work", "Profile", "Services", "Contact"];
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -22,11 +23,13 @@ export default function Navbar() {
                     <nav className="hidden lg:block">
                         <ul className="flex items-center gap-8">
                             {NAV_ITEMS.map((item) => (
-                                <li
-                                    key={item}
-                                    className="cursor-pointer text-sm font-medium transition-opacity hover:opacity-80"
-                                >
-                                    {item}
+                                <li key={item}>
+                                    <Link
+                                        href={`#${item.toLowerCase()}`}
+                                        className="cursor-pointer text-sm font-medium transition-opacity hover:opacity-80"
+                                    >
+                                        {item}
+                                    </Link>
                                 </li>
                             ))}
                         </ul>
@@ -55,9 +58,14 @@ export default function Navbar() {
                                 <li
                                     key={item}
                                     className="cursor-pointer text-base font-medium"
-                                    onClick={() => setIsOpen(false)}
                                 >
-                                    {item}
+                                    <Link
+                                        href={`#${item.toLowerCase()}`}
+                                        onClick={() => setIsOpen(false)}
+                                        className="block w-full"
+                                    >
+                                        {item}
+                                    </Link>
                                 </li>
                             ))}
                         </ul>

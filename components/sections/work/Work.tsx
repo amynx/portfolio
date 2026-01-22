@@ -72,9 +72,9 @@ const WORK_ITEMS = [
 /*                                COMPONENT                                   */
 /* -------------------------------------------------------------------------- */
 
-export default function Work() {
+export default function Work({ id }: { id?: string }) {
     return (
-        <SectionWrapper className="relative overflow-hidden">
+        <SectionWrapper id={id} className="relative overflow-hidden">
             {/* Decorative background */}
             <Image
                 src="/assets/images/ay-logo-stroke.svg"

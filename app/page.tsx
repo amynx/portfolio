@@ -13,10 +13,10 @@ export default function Page() {
       <AppContainer>
         <Navbar />
         <Hero />
-        <Work />
-        <Profile />
-        <Services />
-        <Contact />
+        <Work id="work" />
+        <Profile id="profile" />
+        <Services id="services" />
+        <Contact id="contact" />
         <Footer />
       </AppContainer>
     </div>
