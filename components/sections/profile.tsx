@@ -74,11 +74,9 @@ export default function Profile() {
                         </h1>
 
                         <p className="text-base leading-relaxed text-gray-700 max-w-xl">
-                            Soy diseñador y desarrollador digital enfocado en crear experiencias digitales claras,
-                            funcionales y bien estructuradas. Mi trabajo parte del entendimiento del problema,
-                            la definición de sistemas y la ejecución consciente, buscando siempre soluciones
-                            honestas y sostenibles. Colaboro con equipos y empresas que valoran el criterio,
-                            la claridad y los procesos bien pensados.
+                            I am a creative professional focused on transforming ideas into clear, functional, and purposeful digital solutions. I specialize in understanding real problems, sorting through complexity, and turning it into products that generate impact, both technically and humanely.
+                            <br /> <br />
+                            I work by connecting vision, business, and technology, accompanying teams and organizations in decision-making, building customized solutions, and continuous improvement. I believe in the value of well-thought-out design, honest processes, and long-term relationships built through real results.
                         </p>
 
                         <Button

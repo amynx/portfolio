@@ -37,17 +37,17 @@ export default function ContactCard() {
                     "
                 >
                     <li>
-                        <a href="#" className="hover:text-black transition whitespace-nowrap">
+                        <a href="https://www.linkedin.com/in/andres-yepez-qa" className="hover:text-black transition whitespace-nowrap" target="_blank">
                             LinkedIn
                         </a>
                     </li>
                     <li>
-                        <a href="#" className="hover:text-black transition whitespace-nowrap">
+                        <a href="https://github.com/amynx" className="hover:text-black transition whitespace-nowrap" target="_blank">
                             GitHub
                         </a>
                     </li>
                     <li>
-                        <a href="#" className="hover:text-black transition whitespace-nowrap">
+                        <a href="#" className="hover:text-black transition whitespace-nowrap" target="_blank">
                             Instagram
                         </a>
                     </li>
