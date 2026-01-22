@@ -16,28 +16,28 @@ const services = [
     {
         title: "Frontend Development",
         description:
-            "Interfaces modernas, accesibles y optimizadas para rendimiento, construidas con tecnologías actuales.",
+            "Modern, accessible, and performance-optimized interfaces built with current technologies.",
         accentColor: "#3B82F6",
         icon: <CodeIcon size={24} />,
     },
     {
         title: "Quality Assurance (QA)",
         description:
-            "Validación funcional y visual para asegurar experiencias estables, confiables y sin fricción.",
+            "Functional and visual validation to ensure stable, reliable, and friction-free experiences.",
         accentColor: "#10B981",
         icon: <ChecksIcon size={24} />,
     },
     {
         title: "UX / UI Design",
         description:
-            "Diseño centrado en el usuario, combinando estética, usabilidad y coherencia visual.",
+            "User-centered design combining aesthetics, usability, and visual coherence.",
         accentColor: "#8B5CF6",
         icon: <PenNibIcon size={24} />,
     },
     {
         title: "Product Thinking",
         description:
-            "Definición estratégica del producto, priorización de valor y alineación con objetivos de negocio.",
+            "Strategic product definition, value prioritization, and alignment with business goals.",
         accentColor: "#F59E0B",
         icon: <RocketLaunchIcon size={24} />,
     },
