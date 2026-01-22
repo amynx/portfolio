@@ -1,0 +1,77 @@
+"use client";
+
+import { useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { EqualsIcon, XIcon } from "@phosphor-icons/react";
+import SectionInner from "../layout/SectionInner";
+
+const NAV_ITEMS = ["Work", "Profile", "Services", "Contact"];
+
+export default function Navbar() {
+    const [isOpen, setIsOpen] = useState(false);
+
+    return (
+        <header className="fixed top-0 flex justify-center items-center w-full bg-gray-50 z-50">
+
+            <SectionInner>
+                <div className="flex items-center justify-between py-8">
+                    {/* Logo */}
+                    <Image src="/ay-logo.svg" alt="Logo" width={60} height={50} />
+
+                    {/* Desktop navigation */}
+                    <nav className="hidden lg:block">
+                        <ul className="flex items-center gap-8">
+                            {NAV_ITEMS.map((item) => (
+                                <li key={item}>
+                                    <Link
+                                        href={`#${item.toLowerCase()}`}
+                                        className="cursor-pointer text-sm font-medium transition-opacity hover:opacity-80"
+                                    >
+                                        {item}
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </nav>
+
+                    {/* Mobile hamburger */}
+                    <button
+                        className="lg:hidden"
+                        aria-label="Abrir menú"
+                        aria-expanded={isOpen}
+                        onClick={() => setIsOpen(!isOpen)}
+                    >
+                        {isOpen ? (
+                            <XIcon size={24} weight="bold" />
+                        ) : (
+                            <EqualsIcon size={24} weight="bold" />
+                        )}
+                    </button>
+                </div>
+
+                {/* Mobile menu */}
+                {isOpen && (
+                    <nav className="absolute top-full left-1/2 -translate-x-1/2 z-50 w-[calc(100%-2rem)] max-w-[1600px] rounded-xl bg-white shadow-md lg:hidden">
+                        <ul className="flex flex-col gap-[var(--space-4)] p-[var(--space-6)]">
+                            {NAV_ITEMS.map((item) => (
+                                <li
+                                    key={item}
+                                    className="cursor-pointer text-base font-medium"
+                                >
+                                    <Link
+                                        href={`#${item.toLowerCase()}`}
+                                        onClick={() => setIsOpen(false)}
+                                        className="block w-full"
+                                    >
+                                        {item}
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </nav>
+                )}
+            </SectionInner>
+        </header>
+    );
+}

@@ -1,15 +1,24 @@
 import AppContainer from "@/components/layout/AppContainer"
-
+import Navbar from "@/components/navigation/Navbar"
+import Hero from "@/components/sections/hero/Hero"
+import Work from "@/components/sections/work/Work"
+import Profile from "@/components/sections/profile"
+import Services from "@/components/sections/services/Services"
+import Contact from "@/components/sections/contact/Contact"
+import Footer from "@/components/navigation/Footer"
 
 export default function Page() {
   return (
     <div>
       <AppContainer>
-        <div className="h-full flex items-center justify-center">
-          <h1 className="text-title-2xl font-semibold">Building Portfolio</h1>
-        </div>
+        <Navbar />
+        <Hero />
+        <Work id="work" />
+        <Profile id="profile" />
+        <Services id="services" />
+        <Contact id="contact" />
+        <Footer />
       </AppContainer>
     </div>
-
   )
 }
