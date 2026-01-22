@@ -4,6 +4,7 @@ import Hero from "@/components/sections/hero/Hero"
 import Work from "@/components/sections/work/Work"
 import Profile from "@/components/sections/profile"
 import Services from "@/components/sections/services/Services"
+import Contact from "@/components/sections/contact/Contact"
 
 export default function Page() {
   return (
@@ -14,6 +15,7 @@ export default function Page() {
         <Work />
         <Profile />
         <Services />
+        <Contact />
       </AppContainer>
     </div>
   )
