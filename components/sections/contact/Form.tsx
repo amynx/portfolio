@@ -94,6 +94,7 @@ export default function Form() {
                         bgColor="bg-black"
                         textColor="text-white"
                         icon={<PaperPlaneTiltIcon size={18} />}
+                        iconPosition="right"
                     />
                 </div>
 
