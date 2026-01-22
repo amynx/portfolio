@@ -10,7 +10,7 @@ export default function Profile() {
     return (
         <SectionWrapper>
             <SectionInner>
-                <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[700px] ">
+                <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[700px]">
 
                     {/* Imagen / Visual */}
                     <div
