@@ -141,7 +141,7 @@ export default function Hero() {
                                 borderRadius="rounded-lg"
                                 icon={<ArrowRightIcon size={20} />}
                                 iconPosition="right"
-                                onClick={() => { }}
+                                onClick={() => { window.location.href = "#contact" }}
                                 disabled={false}
                             />
 
