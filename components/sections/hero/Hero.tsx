@@ -14,10 +14,15 @@ import {
     ArrowRightIcon,
 
 } from "@phosphor-icons/react";
+import { scrollToSection } from "@/utils/scroll";
 
-export default function Hero() {
+interface HeroProps {
+    id?: string;
+}
+
+export default function Hero({ id }: HeroProps) {
     return (
-        <SectionWrapper className="hero-shadow relative min-h-screen w-full flex items-stretch bg-magic-grid">
+        <SectionWrapper id={id} className="hero-shadow relative min-h-screen w-full flex items-stretch bg-magic-grid">
 
             {/* Imagen de fondo */}
             <Image
@@ -141,7 +146,7 @@ export default function Hero() {
                                 borderRadius="rounded-lg"
                                 icon={<ArrowRightIcon size={20} />}
                                 iconPosition="right"
-                                onClick={() => { window.location.href = "#contact" }}
+                                onClick={() => scrollToSection("contact")}
                                 disabled={false}
                             />
 
