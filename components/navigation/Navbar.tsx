@@ -6,11 +6,13 @@ import { EqualsIcon, XIcon } from "@phosphor-icons/react";
 import SectionInner from "../layout/SectionInner";
 
 import { scrollToSection } from "@/utils/scroll";
+import { useActiveSection } from "@/hooks/useActiveSection";
 
 const NAV_ITEMS = ["Home", "Work", "Profile", "Services", "Contact"];
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
+    const activeSection = useActiveSection(NAV_ITEMS.map((item) => item.toLowerCase()));
 
     return (
         <header className="fixed top-0 flex justify-center items-center w-full bg-gray-50 z-50">
@@ -29,7 +31,11 @@ export default function Navbar() {
                                 <li key={item}>
                                     <button
                                         onClick={() => scrollToSection(item.toLowerCase())}
-                                        className="cursor-pointer text-sm font-medium transition-opacity hover:opacity-80 bg-transparent border-0"
+                                        className={`cursor-pointer text-sm font-medium transition-all bg-transparent border-0
+                                            ${activeSection === item.toLowerCase()
+                                                ? "text-blue-600 font-semibold"
+                                                : "text-gray-600 hover:text-gray-900 hover:opacity-80"
+                                            }`}
                                     >
                                         {item}
                                     </button>
@@ -67,7 +73,11 @@ export default function Navbar() {
                                             setIsOpen(false);
                                             scrollToSection(item.toLowerCase());
                                         }}
-                                        className="block w-full text-left bg-transparent border-0"
+                                        className={`block w-full text-left bg-transparent border-0 transition-colors
+                                            ${activeSection === item.toLowerCase()
+                                                ? "text-blue-600 font-semibold"
+                                                : "text-gray-800"
+                                            }`}
                                     >
                                         {item}
                                     </button>
