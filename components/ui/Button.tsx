@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import Link from "next/link";
 
 type ButtonProps = {
     text: string;
@@ -10,6 +11,10 @@ type ButtonProps = {
     iconPosition?: "left" | "right";
     onClick?: () => void;
     disabled?: boolean;
+    href?: string;
+    target?: string;
+    rel?: string;
+    download?: boolean;
 };
 
 export default function Button({
@@ -22,12 +27,12 @@ export default function Button({
     iconPosition = "left",
     onClick,
     disabled = false,
+    href,
+    target,
+    rel,
+    download,
 }: ButtonProps) {
-    return (
-        <button
-            onClick={onClick}
-            disabled={disabled}
-            className={`
+    const baseClasses = `
         inline-flex items-center justify-center gap-2
         px-4 py-1
         border
@@ -39,11 +44,39 @@ export default function Button({
         hover:opacity-90
         disabled:opacity-50 disabled:cursor-not-allowed
         cursor-pointer
-      `}
-        >
+    `;
+
+    const content = (
+        <>
             {icon && iconPosition === "left" && <span>{icon}</span>}
             <span>{text}</span>
             {icon && iconPosition === "right" && <span>{icon}</span>}
+        </>
+    );
+
+    if (href) {
+        return (
+            <a
+                href={href}
+                target={target}
+                rel={rel}
+                className={baseClasses}
+                onClick={onClick}
+                // @ts-ignore - 'download' attribute validity check
+                download={download}
+            >
+                {content}
+            </a>
+        );
+    }
+
+    return (
+        <button
+            onClick={onClick}
+            disabled={disabled}
+            className={baseClasses}
+        >
+            {content}
         </button>
     );
 }
