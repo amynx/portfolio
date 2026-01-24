@@ -52,7 +52,7 @@ export default function Footer() {
                         {/* Social links first on mobile */}
                         <div className="flex gap-5 md:order-2">
                             <Link
-                                href="https://linkedin.com"
+                                href="www.linkedin.com/in/andres-yepez-qa"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="hover:text-gray-800 transition-colors"
@@ -60,7 +60,7 @@ export default function Footer() {
                                 LinkedIn
                             </Link>
                             <Link
-                                href="https://github.com"
+                                href="https://github.com/amynx"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="hover:text-gray-800 transition-colors"

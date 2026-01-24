@@ -12,7 +12,7 @@ export default function Page() {
     <div>
       <AppContainer>
         <Navbar />
-        <Hero />
+        <Hero id="home" />
         <Work id="work" />
         <Profile id="profile" />
         <Services id="services" />
