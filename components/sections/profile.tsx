@@ -4,7 +4,7 @@ import SectionInner from "../layout/SectionInner";
 import SectionWrapper from "../layout/SectionWrapper";
 import Image from "next/image";
 import Button from "../ui/Button";
-import { ArrowRightIcon } from "@phosphor-icons/react";
+import { DownloadSimple, ArrowRightIcon } from "@phosphor-icons/react";
 
 export default function Profile({ id }: { id?: string }) {
     return (
@@ -79,17 +79,31 @@ export default function Profile({ id }: { id?: string }) {
                             I work by connecting vision, business, and technology, accompanying teams and organizations in decision-making, building customized solutions, and continuous improvement. I believe in the value of well-thought-out design, honest processes, and long-term relationships built through real results.
                         </p>
 
-                        <Button
-                            text="learn more"
-                            bgColor="bg-[var(--color-black)]"
-                            textColor="text-[var(--color-white)]"
-                            borderColor="border-[var(--color-blue-500)]"
-                            borderRadius="rounded-lg"
-                            icon={<ArrowRightIcon size={20} />}
-                            iconPosition="right"
-                            onClick={() => { }}
-                            disabled={false}
-                        />
+                        <div className="flex flex-wrap gap-4">
+                            <Button
+                                text="Learn more"
+                                bgColor="bg-[var(--color-black)]"
+                                textColor="text-[var(--color-white)]"
+                                borderColor="border-[var(--color-blue-500)]"
+                                borderRadius="rounded-lg"
+                                icon={<ArrowRightIcon size={20} />}
+                                iconPosition="right"
+                                onClick={() => { }}
+                            />
+
+                            <Button
+                                text="Get my resume"
+                                bgColor="bg-transparent"
+                                textColor="text-[var(--color-black)]"
+                                borderColor="border-[var(--color-black)]"
+                                borderRadius="rounded-lg"
+                                icon={<DownloadSimple size={20} />}
+                                iconPosition="right"
+                                href="/andres_yepez_cv.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            />
+                        </div>
                     </div>
 
                 </div>
