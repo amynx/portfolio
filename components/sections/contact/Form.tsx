@@ -1,3 +1,5 @@
+"use client";
+
 import Button from "@/components/ui/Button";
 import {
     AtIcon,
@@ -19,8 +21,36 @@ const iconProps = {
 };
 
 export default function Form() {
+
+    async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+        e.preventDefault();
+
+        const form = e.currentTarget; // 👈 guardar referencia
+
+        const formData = new FormData(form);
+
+        const res = await fetch("/api/contact", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                name: formData.get("name"),
+                email: formData.get("email"),
+                type: formData.get("type"),
+                message: formData.get("message"),
+            }),
+        });
+
+        if (res.ok) {
+            form.reset(); // ✅ ahora sí
+            alert("Message sent successfully ✅");
+        } else {
+            alert("Something went wrong ❌");
+        }
+    }
+
+
     return (
-        <form className="w-full">
+        <form className="w-full" onSubmit={handleSubmit}>
             <div className="flex flex-col gap-6">
 
                 {/* Name + Email */}
@@ -32,9 +62,11 @@ export default function Form() {
                         </label>
                         <input
                             id="name"
+                            name="name"
                             type="text"
                             className={baseInput}
                             placeholder="Your name"
+                            required
                         />
                     </div>
 
@@ -45,23 +77,27 @@ export default function Form() {
                         </label>
                         <input
                             id="email"
+                            name="email"
                             type="email"
                             className={baseInput}
                             placeholder="you@email.com"
+                            required
                         />
                     </div>
                 </div>
 
                 {/* Type of message */}
                 <div className="flex flex-col gap-2">
-                    <label htmlFor="type-message" className={labelClass}>
+                    <label htmlFor="type" className={labelClass}>
                         <TagSimpleIcon {...iconProps} />
                         Type of message
                     </label>
                     <select
-                        id="type-message"
+                        id="type"
+                        name="type"
                         className={baseInput}
                         defaultValue=""
+                        required
                     >
                         <option value="" disabled>
                             Select an option
@@ -81,21 +117,25 @@ export default function Form() {
                     </label>
                     <textarea
                         id="message"
+                        name="message"
                         rows={6}
                         className={`${baseInput} resize-none`}
                         placeholder="Tell me about your idea..."
+                        required
                     />
                 </div>
 
                 {/* Submit */}
                 <div className="flex justify-end">
-                    <Button
-                        text="Send message"
-                        bgColor="bg-black"
-                        textColor="text-white"
-                        icon={<PaperPlaneTiltIcon size={18} />}
-                        iconPosition="right"
-                    />
+                    <button type="submit">
+                        <Button
+                            text="Send message"
+                            bgColor="bg-black"
+                            textColor="text-white"
+                            icon={<PaperPlaneTiltIcon size={18} />}
+                            iconPosition="right"
+                        />
+                    </button>
                 </div>
 
             </div>
