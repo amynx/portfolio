@@ -212,7 +212,7 @@ const WORK_ITEMS: WorkItem[] = [
             accentColor: '#FFC107',
 
             client: 'Personal Project',
-            date: '2023',
+            date: '2025',
             githubUrl: 'https://github.com/andres/tastery',
 
             images: ['/assets/images/work/tastery-case-study.png'],
