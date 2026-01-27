@@ -94,7 +94,7 @@ const WORK_ITEMS: WorkItem[] = [
             date: '2025 - Present',
             productionUrl: 'https://ateras.co',
 
-            images: ['/assets/images/work/ateras-case-study.png'],
+            images: ['/assets/images/work/ateras-case.png'],
 
             narrative: {
                 context:
@@ -155,7 +155,7 @@ const WORK_ITEMS: WorkItem[] = [
             date: '2023',
             productionUrl: 'https://coomulcavisur.com',
 
-            images: ['/assets/images/work/coomulcavisur-case-study.png'],
+            images: ['/assets/images/work/coomulcavisur-case.png'],
 
             narrative: {
                 context:
@@ -214,8 +214,9 @@ const WORK_ITEMS: WorkItem[] = [
             client: 'Personal Project',
             date: '2025',
             githubUrl: 'https://github.com/andres/tastery',
+            productionUrl: 'https://tastery.netlify.app/',
 
-            images: ['/assets/images/work/tastery-case-study.png'],
+            images: ['/assets/images/work/tastery-case.png'],
 
             narrative: {
                 context:
