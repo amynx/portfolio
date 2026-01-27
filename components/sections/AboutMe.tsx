@@ -41,19 +41,19 @@ const EXPERIENCE = [
     {
         year: "2025",
         company: "Ateras",
-        role: "CEO",
+        role: "CEO / Co-founder",
         description: "Leading the vision and strategy for custom software solutions."
     },
     {
         year: "2025",
-        company: "Palmira y CÍA S.A.S",
+        company: "Palmira y CIA S.A.S.",
         role: "Consultant",
         description: "Advising on digital transformation and process optimization."
     },
     {
         year: "2024",
         company: "Crear Colombia",
-        role: "Quality Analyst",
+        role: "Quality Analyst (QA)",
         description: "Ensuring software quality and implementing QA methodologies."
     },
     {
@@ -115,6 +115,8 @@ const SKILLS = [
         technologies: [
             { name: "Node.js", icon: <SiNodedotjs size={14} /> },
             { name: "REST APIs", icon: <Database size={14} /> },
+            { name: "SQL", icon: <Database size={14} /> },
+            { name: "MySQL", icon: <Database size={14} /> },
         ],
     },
     {
