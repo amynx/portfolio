@@ -4,18 +4,24 @@ import { JSX, useState } from 'react';
 import Image from 'next/image';
 import {
     PersonIcon,
-    CodeIcon,
-    PaintBrushIcon,
     DatabaseIcon,
+    GlobeIcon,
+    HammerIcon,
     AtomIcon,
     DeviceMobileIcon,
-    GlobeIcon,
-    FigmaLogoIcon,
-    LightningIcon,
-    HammerIcon,
-    FileTsIcon,
-    FileCssIcon,
 } from '@phosphor-icons/react';
+import {
+    SiNextdotjs,
+    SiTypescript,
+    SiTailwindcss,
+    SiFramer,
+    SiHtml5,
+    SiCss3,
+    SiJavascript,
+    SiSwiper,
+} from 'react-icons/si';
+import { MdDevices } from 'react-icons/md';
+import { FaCubes, FaLayerGroup, FaBolt, FaSitemap } from 'react-icons/fa6';
 
 import SectionWrapper from '@/components/layout/SectionWrapper';
 import SectionInner from '@/components/layout/SectionInner';
@@ -102,10 +108,10 @@ const WORK_ITEMS: WorkItem[] = [
             },
 
             stack: [
-                { name: 'Next.js', icon: <GlobeIcon /> },
-                { name: 'TypeScript', icon: <FileTsIcon /> },
-                { name: 'Tailwind CSS', icon: <FileCssIcon /> },
-                { name: 'Framer Motion', icon: <AtomIcon /> },
+                { name: 'Next.js', icon: <SiNextdotjs size={18} /> },
+                { name: 'TypeScript', icon: <SiTypescript size={18} /> },
+                { name: 'Tailwind CSS', icon: <SiTailwindcss size={18} /> },
+                { name: 'Framer Motion', icon: <SiFramer size={18} /> },
             ],
         },
 
@@ -163,11 +169,11 @@ const WORK_ITEMS: WorkItem[] = [
             },
 
             stack: [
-                { name: 'HTML', icon: <GlobeIcon /> },
-                { name: 'CSS', icon: <CodeIcon /> },
-                { name: 'JavaScript', icon: <PaintBrushIcon /> },
-                { name: 'Swiper.js', icon: <AtomIcon /> },
-                { name: 'Responsive Design', icon: <AtomIcon /> },
+                { name: 'HTML', icon: <SiHtml5 size={18} /> },
+                { name: 'CSS', icon: <SiCss3 size={18} /> },
+                { name: 'JavaScript', icon: <SiJavascript size={18} /> },
+                { name: 'Swiper.js', icon: <SiSwiper size={18} /> },
+                { name: 'Responsive Design', icon: <MdDevices size={18} /> },
             ],
         },
 
@@ -223,12 +229,12 @@ const WORK_ITEMS: WorkItem[] = [
             },
 
             stack: [
-                { name: 'JavaScript (ES6+)', icon: <CodeIcon /> },
-                { name: 'Object-Oriented Programming', icon: <AtomIcon /> },
-                { name: 'Design Patterns', icon: <GlobeIcon /> },
-                { name: 'Asynchronous Programming', icon: <LightningIcon /> },
-                { name: 'DOM Manipulation', icon: <PaintBrushIcon /> },
-                { name: 'Responsive Layout', icon: <DeviceMobileIcon /> },
+                { name: 'JavaScript (ES6+)', icon: <SiJavascript size={18} /> },
+                { name: 'Object-Oriented Programming', icon: <FaCubes size={18} /> },
+                { name: 'Design Patterns', icon: <FaLayerGroup size={18} /> },
+                { name: 'Asynchronous Programming', icon: <FaBolt size={18} /> },
+                { name: 'DOM Manipulation', icon: <FaSitemap size={18} /> },
+                { name: 'Responsive Layout', icon: <MdDevices size={18} /> },
             ],
         },
 
