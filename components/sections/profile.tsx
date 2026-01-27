@@ -1,12 +1,16 @@
 'use client';
 
+import { useState } from 'react';
 import SectionInner from "../layout/SectionInner";
 import SectionWrapper from "../layout/SectionWrapper";
 import Image from "next/image";
 import Button from "../ui/Button";
 import { DownloadSimple, ArrowRightIcon } from "@phosphor-icons/react";
+import AboutMe from "./AboutMe";
 
 export default function Profile({ id }: { id?: string }) {
+    const [showAboutMe, setShowAboutMe] = useState(false);
+
     return (
         <SectionWrapper id={id}>
             <SectionInner>
@@ -88,7 +92,7 @@ export default function Profile({ id }: { id?: string }) {
                                 borderRadius="rounded-lg"
                                 icon={<ArrowRightIcon size={20} />}
                                 iconPosition="right"
-                                onClick={() => { }}
+                                onClick={() => setShowAboutMe(true)}
                             />
 
                             <Button
@@ -108,6 +112,8 @@ export default function Profile({ id }: { id?: string }) {
 
                 </div>
             </SectionInner>
+
+            {showAboutMe && <AboutMe onClose={() => setShowAboutMe(false)} />}
         </SectionWrapper>
     );
 }
