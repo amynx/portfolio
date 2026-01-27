@@ -82,7 +82,7 @@ const WORK_ITEMS: WorkItem[] = [
             projectName: 'Ateras',
             title: 'Crafting an Elegant and Scalable Digital Presence',
             description:
-                'A modern and timeless corporate website designed to communicate Ateras’ services, products, and vision as a software development team.',
+                'A modern and timeless corporate website designed to communicate Ateras services, products, and vision as a software development team.',
             sector: 'Software Agency',
             role: {
                 text: 'Frontend, UI/UX',
