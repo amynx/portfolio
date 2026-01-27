@@ -13,8 +13,8 @@ import Card from '@/components/sections/work/Card';
 
 const WORK_ITEMS = [
     {
-        logo: '/assets/images/work/rising-labs-logo.svg',
-        projectName: 'Rising Labs',
+        logo: '/assets/images/work/ateras-logo.svg',
+        projectName: 'Ateras',
         sector: 'Software Development',
         role: {
             text: 'Frontend',
