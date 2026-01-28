@@ -213,7 +213,7 @@ const WORK_ITEMS: WorkItem[] = [
 
             client: 'Personal Project',
             date: '2025',
-            githubUrl: 'https://github.com/andres/tastery',
+            githubUrl: 'https://github.com/amynx/tastery',
             productionUrl: 'https://tastery.netlify.app/',
 
             images: ['/assets/images/work/tastery-case.png'],
